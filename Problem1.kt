@@ -19,7 +19,7 @@
  * -100 <= nums[i] <= 100
  * nums is sorted in non-decreasing order.
  */
-class Solution {
+class Solution1 {
     fun removeDuplicates(nums: IntArray): Int {
         if (nums.isEmpty()) return 0
         var i = 1
@@ -36,9 +36,9 @@ class Solution {
 }
 
 fun main() {
-    val i = Solution().removeDuplicates(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))
+    val i = Solution1().removeDuplicates(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))
     println(i)
     
-    val j = Solution().removeDuplicates(intArrayOf(0, 1, 2, 3, 4))
+    val j = Solution1().removeDuplicates(intArrayOf(0, 1, 2, 3, 4))
     println(j)
 }
