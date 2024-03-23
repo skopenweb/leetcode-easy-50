@@ -15,7 +15,7 @@
  * 1 <= prices.length <= 3 * 104
  * 0 <= prices[i] <= 104
  */
-class Solution {
+class Solution2 {
     fun maxProfit(prices: IntArray): Int {
         if (prices.size < 2) return 0
         var profit = 0
@@ -60,7 +60,7 @@ class Solution {
 }
 
 fun main() {
-    println(Solution().maxProfit(intArrayOf(7, 1, 5, 3, 6, 4)))
-    println(Solution().maxProfit(intArrayOf(1, 2, 3, 4, 5)))
-    println(Solution().maxProfit(intArrayOf(7, 6, 4, 3, 1)))
+    println(Solution2().maxProfit(intArrayOf(7, 1, 5, 3, 6, 4)))
+    println(Solution2().maxProfit(intArrayOf(1, 2, 3, 4, 5)))
+    println(Solution2().maxProfit(intArrayOf(7, 6, 4, 3, 1)))
 }
